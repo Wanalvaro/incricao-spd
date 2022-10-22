@@ -16,7 +16,7 @@
 
 #content {
   background-color: #c2c7c2;
-  widht: 100%;
+  width: 100%;
   height: 700px;
   text-align: center;
   padding: 10px;
@@ -28,71 +28,117 @@
 }
 
 #h2 {
-font-size: 35px;
-margin: 10px 0 10px;
+  font-size: 35px;
+  margin: 10px 0 10px;
   text-align: center;
-  font-family: 'Courier new', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
 }
 
 #button {
-background-color: #4CAF50;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
 }
 
 #h2:after {
-content: '|';
-margin-left: 5px;
-opacity: 1;
-animation: pisca .7s infinite;  
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
 }
 
 @keyframes pisca{
-0%, 100%{
-  opacity: 1;
-}
-50%{
-  opacity: 0; 
- }
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{
-margin: 0 auto;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Open Sans', sans-serif;
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #menu {
-text-align: center;
-background-color: rgb(37,37,39);
+    text-align: center;
+    background-color: rgb(37, 37, 39);
 }
 
 #menu ul {
-max-widht: 800px;
-list-style: none;
-padding: 0;  
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
 }
 
 #menu ul li {
-display: inline;
+    display: inline;
 }
 
 #menu ul li a {
-color: #fff;
-padding: 20px;
-display: inline-block;
-text-decoration: none;
-transition: background .4s;
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
 }
 
 #menu ul li a:hover {
-  background-color: rgb(24, 139, 233);
+    background-color: rgb(24, 139, 233);
+}
+
+input[type=text], textarea, select {
+   width: 50%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+   width: 15%;
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+}
+
+input[type=submit]:hover {
+   background-color: #45a049;
+}
+
+#form {
+   width: 50%;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+}
+
+#subscripts {
+   border-collapse: collapse;
+   width: 50%;
+}
+
+#subscripts td, #subscripts th {
+   border: 1px solid #ddd;
+   padding: 8px;
+}
+
+#subscripts th {
+   text-align: center;
+   background-color: #04AA6D;
+   color: white;
 }
